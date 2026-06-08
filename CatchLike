@@ -1,0 +1,18 @@
+{
+  "name": "CatchLike",
+  "type": "object",
+  "properties": {
+    "catch_id": {
+      "type": "string",
+      "description": "ID of the catch log"
+    },
+    "user_id": {
+      "type": "string",
+      "description": "ID of the user who liked"
+    }
+  },
+  "required": [
+    "catch_id",
+    "user_id"
+  ]
+}
