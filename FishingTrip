@@ -1,0 +1,64 @@
+{
+  "name": "FishingTrip",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Trip title"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Planned date"
+    },
+    "location_name": {
+      "type": "string",
+      "description": "Location name"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "target_species": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Target species"
+    },
+    "gear_list": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Gear to bring"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Trip notes"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Planned",
+        "In Progress",
+        "Completed",
+        "Cancelled"
+      ],
+      "default": "Planned"
+    },
+    "companions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Friends joining"
+    }
+  },
+  "required": [
+    "title",
+    "date"
+  ]
+}
