@@ -1,0 +1,22 @@
+{
+  "name": "CatchComment",
+  "type": "object",
+  "properties": {
+    "catch_id": {
+      "type": "string",
+      "description": "ID of the catch log"
+    },
+    "content": {
+      "type": "string",
+      "description": "Comment text"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Name of the commenter"
+    }
+  },
+  "required": [
+    "catch_id",
+    "content"
+  ]
+}
