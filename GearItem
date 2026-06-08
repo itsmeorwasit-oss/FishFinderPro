@@ -1,0 +1,62 @@
+{
+  "name": "GearItem",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the gear"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Rod",
+        "Reel",
+        "Lure",
+        "Bait",
+        "Tackle",
+        "Line",
+        "Net",
+        "Electronics",
+        "Clothing",
+        "Accessories",
+        "Other"
+      ],
+      "description": "Gear category"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Brand name"
+    },
+    "model": {
+      "type": "string",
+      "description": "Model name/number"
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "New",
+        "Good",
+        "Fair",
+        "Poor"
+      ],
+      "description": "Current condition"
+    },
+    "purchase_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date purchased"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notes about the gear"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Photo of the gear"
+    }
+  },
+  "required": [
+    "name",
+    "category"
+  ]
+}
