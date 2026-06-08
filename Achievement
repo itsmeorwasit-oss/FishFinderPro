@@ -1,0 +1,43 @@
+{
+  "name": "Achievement",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "User who earned it"
+    },
+    "badge_name": {
+      "type": "string",
+      "description": "Name of the achievement"
+    },
+    "badge_icon": {
+      "type": "string",
+      "description": "Icon identifier"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the achievement"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When it was earned"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Catches",
+        "Species",
+        "Streak",
+        "Community",
+        "Explorer",
+        "Trophy"
+      ],
+      "description": "Achievement category"
+    }
+  },
+  "required": [
+    "user_id",
+    "badge_name"
+  ]
+}
