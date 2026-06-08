@@ -1,0 +1,85 @@
+{
+  "name": "CatchLog",
+  "type": "object",
+  "properties": {
+    "species": {
+      "type": "string",
+      "description": "Fish species caught"
+    },
+    "weight": {
+      "type": "number",
+      "description": "Weight in pounds"
+    },
+    "length": {
+      "type": "number",
+      "description": "Length in inches"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time of catch"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "GPS latitude"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "GPS longitude"
+    },
+    "location_name": {
+      "type": "string",
+      "description": "Name of the fishing location"
+    },
+    "weather": {
+      "type": "string",
+      "description": "Weather conditions"
+    },
+    "temperature": {
+      "type": "number",
+      "description": "Temperature in Fahrenheit"
+    },
+    "water_temp": {
+      "type": "number",
+      "description": "Water temperature"
+    },
+    "water_conditions": {
+      "type": "string",
+      "description": "Water conditions"
+    },
+    "bait_used": {
+      "type": "string",
+      "description": "Bait or lure used"
+    },
+    "technique": {
+      "type": "string",
+      "description": "Fishing technique"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Photo of the catch"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Personal notes"
+    },
+    "is_personal_best": {
+      "type": "boolean",
+      "description": "Whether this is a personal best"
+    },
+    "likes_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of likes"
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether catch is visible to community"
+    }
+  },
+  "required": [
+    "species",
+    "date"
+  ]
+}
