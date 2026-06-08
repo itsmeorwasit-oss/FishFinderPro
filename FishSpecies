@@ -1,0 +1,82 @@
+{
+  "name": "FishSpecies",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Common name of the fish species"
+    },
+    "scientific_name": {
+      "type": "string",
+      "description": "Scientific name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the species"
+    },
+    "habitat": {
+      "type": "string",
+      "description": "Typical habitat"
+    },
+    "avg_weight": {
+      "type": "string",
+      "description": "Average weight range"
+    },
+    "avg_length": {
+      "type": "string",
+      "description": "Average length range"
+    },
+    "record_weight": {
+      "type": "string",
+      "description": "World record weight"
+    },
+    "season": {
+      "type": "string",
+      "description": "Best fishing season"
+    },
+    "best_bait": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Recommended baits and lures"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "Easy",
+        "Medium",
+        "Hard",
+        "Expert"
+      ],
+      "description": "Difficulty to catch"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Image of the species"
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Regions where found"
+    },
+    "water_type": {
+      "type": "string",
+      "enum": [
+        "Freshwater",
+        "Saltwater",
+        "Brackish"
+      ],
+      "description": "Water type"
+    },
+    "tips": {
+      "type": "string",
+      "description": "Fishing tips for this species"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
