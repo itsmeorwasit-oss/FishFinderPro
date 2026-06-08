@@ -1,0 +1,79 @@
+{
+  "name": "FishingSpot",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the fishing spot"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the spot"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Latitude"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Longitude"
+    },
+    "water_type": {
+      "type": "string",
+      "enum": [
+        "Lake",
+        "River",
+        "Pond",
+        "Stream",
+        "Ocean",
+        "Bay",
+        "Reservoir"
+      ],
+      "description": "Type of water body"
+    },
+    "species_available": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Fish species found here"
+    },
+    "amenities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Available amenities"
+    },
+    "access_type": {
+      "type": "string",
+      "enum": [
+        "Public",
+        "Private",
+        "Permit Required"
+      ],
+      "description": "Access type"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Average rating out of 5"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Image of the spot"
+    },
+    "has_boat_launch": {
+      "type": "boolean",
+      "description": "Whether boat launch is available"
+    },
+    "best_season": {
+      "type": "string",
+      "description": "Best season to fish here"
+    }
+  },
+  "required": [
+    "name",
+    "latitude",
+    "longitude"
+  ]
+}
